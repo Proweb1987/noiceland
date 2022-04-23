@@ -1,0 +1,49 @@
+.main__featured {
+    @include container();
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    row-gap: 50px;
+    @include media(1320px) {
+     & .main__featured-img {
+         width: 100%;
+     }
+    }
+    @include media($sm) {
+        grid-template-columns: 1fr;
+    }
+    &-span {
+        font-size: 10px;
+        line-height: 12px;
+        color: $grey;
+        text-transform: uppercase;
+        display: block; 
+        margin-top: 25px;
+        margin-bottom: 18px; 
+    }
+    &-text {
+        font-size: 19px;
+        line-height: 24px;
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        max-width: 568px;
+        width: 100%;
+    }
+    &-btn {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        text-transform: uppercase;
+        color: $black;
+    }
+}
+.text {
+    @include container();
+    font-size: 10px;
+    line-height: 12px;
+    color: $grey;
+    text-transform: uppercase;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}

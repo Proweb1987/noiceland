@@ -1,0 +1,11 @@
+header.header
+    .header__nav
+        .bg 
+        button.header__nav-button.icon-menu(href="#!")
+        a.header__nav-btn(href="#!")
+            img(src=require('@/images/nav-logo.png'), alt="")
+        ul.header__nav-menu 
+            -var btn = ['Home','Latest','About'] 
+                each value in btn 
+                    li.header__nav-li 
+                        a.header__nav-link(href="#!")= value  
